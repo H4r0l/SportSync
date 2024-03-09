@@ -17,7 +17,7 @@ const Navbar = () => {
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3 mx-12">
         <Link href="/">
-          <div className="font-bold">Tennis App</div>
+          <div className="font-bold text-white">Tennis App</div>
         </Link>
 
         <button
