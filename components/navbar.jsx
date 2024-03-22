@@ -54,7 +54,7 @@ const Navbar = () => {
                   Dashboard
                 </button>
               </Link>
-              <p>
+              <p className="text-white">
                 {session.user.name} | {session.user.email}
               </p>
               <img
