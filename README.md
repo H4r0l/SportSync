@@ -1,34 +1,66 @@
-This is a demo project, not for public use
+# SportSync
 
-## Getting Started
+Create and manage tournaments of any sport easily and quickly.
 
-First, run the development server:
+What is SportSync?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+SportSync is an online platform that allows you to create and manage tournaments in any sport easily and quickly. With SportSync, you can:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - Create tournaments for any sport: Football, basketball, tennis, paddle tennis, eSports... ¡The choice is yours!
+  
+  - Customize your tournament: Choose the competition format, the number of teams, the dates and times of the matches, etc.
+  
+  - Manage teams and players: Register teams and players, assign bibs, etc.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  - Follow live scores: Check the results of the matches in real time.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - Publish Leaderboards: Keep participants informed of the tournament standings.
 
-## Learn More
+# Why use SportSync?
+  
+  - Easy to use: SportSync is an intuitive and easy-to-use platform, even for users with no previous experience in organizing tournaments.
 
-To learn more about Next.js, take a look at the following resources:
+  - Free: SportSync is a free platform for creating and managing tournaments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#  features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Tournament Creation:
 
-## Deploy
+ - Choose the sport.
 
-Upcoming deploy on the Vercel platform
+ - Choose the competition format.
+
+ - Define the number of teams.
+
+ - Set the dates and times of the matches.
+
+Team & Player Management:
+
+ - Registration of teams and players.
+
+Follow-up of results:
+
+ - Real-time results viewing.
+
+Classification:
+ 
+ - Publication of the tournament standings.
+
+# Proceeds
+
+ - Easy to use: Intuitive and straightforward interface.
+
+ - Powerful and flexible: Wide variety of customization options.
+
+ - Free: Free platform for creating and managing tournaments.
+
+# Who is it for?
+
+SportSync is ideal for:
+
+ - Organisers of sporting events: Sports clubs, sports associations, companies, etc.
+
+ - Coaches and physical education teachers: To organize tournaments among their students.
+ 
+ - Groups of friends: To organize tournaments between friends.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
