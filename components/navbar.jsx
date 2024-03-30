@@ -3,8 +3,12 @@
 import { useState } from "react";
 import Link from 'next/link'
 import { signIn, useSession, signOut } from 'next-auth/react'
+import connectDB from "@/utils/db";
 
 const Navbar = () => {
+
+   // Es una llamada a la funcion de conexión a la base de datos, solo como prueba para ver si funciona
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const { data: session } = useSession();
@@ -54,9 +58,6 @@ const Navbar = () => {
                   Dashboard
                 </button>
               </Link>
-              <p className="text-white">
-                {session.user.name} | {session.user.email}
-              </p>
               <img
                 src={session.user.image}
                 alt=""
