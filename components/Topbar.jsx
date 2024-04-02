@@ -3,9 +3,8 @@
 import { useState } from "react";
 import Link from 'next/link'
 import { signIn, useSession, signOut } from 'next-auth/react'
-import connectDB from "@/utils/db";
 
-const Navbar = () => {
+const Topbar = () => {
 
    // Es una llamada a la funcion de conexión a la base de datos, solo como prueba para ver si funciona
   
@@ -86,4 +85,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Topbar;
