@@ -1,2 +1,10 @@
 ### 
-GET http://localhost:3000/api/test/
+GET http://localhost:3000/api/test
+
+### 
+POST http://localhost:3000/api/test HTTP/1.1
+Content-Type: application/json
+
+{
+    "Content": "Hello",
+}
