@@ -20,7 +20,7 @@ const Topbar = () => {
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3 mx-12">
         <Link href="/">
-          <div className="font-bold text-white">Tennis App</div>
+          <div className="font-bold text-white font-family-[Mada]">SportSync</div>
         </Link>
 
         <button
