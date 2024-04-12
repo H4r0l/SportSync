@@ -15,12 +15,12 @@ const Topbar = () => {
   const loggedIn = session && session.user
   return (
     <nav
-      className="relative flex w-full flex-wrap items-center justify-between bg-teal-700 py-2 text-gray-700 shadow-lg hover:text-gray-900 focus:text-gray-700 dark:bg-gray-600 lg:py-4 "
+      className="relative flex w-full flex-wrap rounded-b-[20px] items-center justify-between bg-[#011627] py-8 text-gray-700 shadow-lg hover:text-gray-900 focus:text-gray-700 lg:py-4 "
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3 mx-12">
         <Link href="/">
-          <div className="font-bold text-white font-family-[Mada]">SportSync</div>
+          <div className="font-bold text-white font-sans">SportSync</div>
         </Link>
 
         <button
