@@ -2,7 +2,6 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    // Make a bottom bar that is floating as a button dock to the bottom
     <div className="flex align-center justify-center">
       <div className="flex align-center justify-center max-w-24 p-2 m-4 fixed bottom-0 w-auto gap-8 bg-[#EED1A2] [box-shadow:0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[25px] shadow-xl rounded-[30px] ">
 
