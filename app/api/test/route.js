@@ -7,7 +7,8 @@ export const GET = async (request, context) => {
 
 // Handler for POST method
 export const POST = async (request, context) => {
-  return NextResponse.json({ message: 'POST' });
+  const body = await request.json();
+  return NextResponse.json({ message: 'POST', body: body });
 }
 
 // Handler for PUT method
