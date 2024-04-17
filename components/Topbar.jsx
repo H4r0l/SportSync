@@ -7,22 +7,27 @@ import { signIn, useSession, signOut } from 'next-auth/react'
 const Topbar = () => {
 
    // Es una llamada a la funcion de conexión a la base de datos, solo como prueba para ver si funciona
-  
+  // Estado local para controlar si la lista desplegable de navegación está abierta o cerrada
   const [isOpen, setIsOpen] = useState(false);
 
+  // Obtener la sesión del usuario actual
   const { data: session } = useSession();
 
+  // Verificar si el usuario está autenticado
   const loggedIn = session && session.user
   return (
+    // Barra de navegación
     <nav
       className="relative flex w-full flex-wrap rounded-b-[20px] items-center justify-between bg-[#011627] py-8 text-gray-700 shadow-lg hover:text-gray-900 focus:text-gray-700 lg:py-4 "
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3 mx-12">
+        {/* Logo y enlace a la página de inicio */}
         <Link href="/">
           <div className="font-bold text-white font-sans">SportSync</div>
         </Link>
 
+        {/* Botón de menú para dispositivos móviles */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="block border-0 bg-transparent px-2 text-gray-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-gray-200 lg:hidden"
@@ -43,14 +48,16 @@ const Topbar = () => {
           </span>
         </button>
 
+        {/* Contenido de la lista desplegable de navegación */}
         <div
           className={`${
             isOpen ? "visible" : "hidden"
           } mt-2 flex basis-full items-center lg:mt-0 lg:flex lg:basis-auto`}
           id="navbarSupportedContent4"
         >
-          {/* Rest of the navbar content */}
+          {/* Resto del contenido de la barra de navegación */}
           {loggedIn ? (
+            // Mostrar enlaces y botón de cierre de sesión si el usuario está autenticado
             <div className="flex items-center space-x-4">
               <Link href="/dashboard">
                 <button className="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-2xl">
@@ -72,6 +79,7 @@ const Topbar = () => {
               </button>
             </div>
           ) : (
+            // Mostrar botón de inicio de sesión si el usuario no está autenticado
             <button
               onClick={() => signIn()}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
